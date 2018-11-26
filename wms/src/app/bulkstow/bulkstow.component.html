@@ -1,0 +1,66 @@
+<div class="screen">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="screen-inner-wrap">
+                  <div class="screen-title">
+                      <h2>Bulk Stow</h2>
+                  </div>
+                  <div class="screen-detail">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-section">
+                                  <form>
+                                      <div class="form-group">
+                                          <div class="row align-items-center">
+                                              <div class="col-md-4">
+                                                  <label for="cartId">Scan Cart ID:</label>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <input 
+                                                      name="cartId" 
+                                                      type="text" 
+                                                      class="form-control"
+                                                      #cartIdRef
+                                                      [(ngModel)]="cartId" 
+                                                      (keyup.enter)='showStowLocation()'>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group" [hidden]="scanStowLocation">
+                                          <div class="row align-items-center">
+                                              <div class="col-md-4">
+                                                  <label for="">Scan Stow Location:</label>
+                                              </div>
+                                              <div class="col-md-8">
+                                                  <input 
+                                                  name="stowlocation" 
+                                                  #stowLocationRef
+                                                  type="text" class="form-control" 
+                                                  [(ngModel)]="stowLocation" 
+                                                  (keyup.enter)='showField()'>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  <div class="row" [hidden]='showCartBtn'>
+                                      <div class="col-md-12">
+                                          <button 
+                                              class="btn btn-primary d-flex ml-auto"
+                                              (click)='formReset()'>
+                                              Cart Full
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="image-section"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+body {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #808285;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #808285;
+    outline: none;
+    transition: all 300ms;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+p {
+    margin: 0 0 25px;
+}
+
+.screen-detail {
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 3% 10%;
+}
+
+.screen-detail ol {
+    padding: 0;
+    border: 1px solid #dbd4d4;
+}
+
+.screen-detail ol li {
+    background-color: #fff;
+    padding: 5px 10px;
+    list-style-position: inside;
+    display: block;
+}
+
+.screen-detail ol li a {
+    color: #000;
+    display: list-item;
+}
+
+.screen-detail ol li:nth-child(even) {
+    background-color: #0000000d;
+}
+
+.screen-title h2 {
+    margin: 10px 0;
+    color: #961969;
+}
+
+.screen-inner-wrap {
+    margin-top: 20px;
+}
